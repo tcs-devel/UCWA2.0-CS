@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>UCWA.CSharp</id>
+    <version>1.0.13-tcs</version>
+    <title>C# library for Unified Communications Web API v2</title>
+    <authors>kenakamu</authors>
+    <owners>kenakamu</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/kenakamu/UCWA2.0-CS</projectUrl>
+    <description>C# library for Unified Communications Web API v2. See https://ucwa.skype.com/documentation/whats-new-ucwa for more detail.</description>
+    <releaseNotes>1.0.13-tcs [tcs] PresenceSubscription renewal fix
+1.0.12 bug fix
+1.0.11 Add CancellationToken support for all methods. Several bug fixes. 
+1.0.10 But fix for authentication expiration error handling and null check for several objects.
+1.0.9 Bug fix for put fails with incorrect etag setting.
+1.0.8 Performance improvement for internal HttpClient usage.
+1.0.7 Added transient error detection and retry policy support
+1.0.6 fixed Participants cannot be accessed in Loby object issue.
+1.0.5 add http route for on-prem discovery
+1.0.4 bug fix
+1.0.3 bug fix
+1.0.2 added https handling for discovery
+1.0.1 fixed typo
+1.0.0 nitial release</releaseNotes>
+    <copyright>MIT</copyright>
+    <tags>C# UCWA Skype</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="UCWASDK\UCWASDK\bin\Release\**.*" target="lib\net45" />
+  </files>
+</package>
